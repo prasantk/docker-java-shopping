@@ -7,10 +7,12 @@ services:
     links:
       - productcatalogue
       - stockmanager
+  
   productcatalogue:
     image: prasantk/djproductcatalogue
     ports:
      - "8020:8020"
+  
   stockmanager:
     image: prasantk/djstockmanager
     ports:

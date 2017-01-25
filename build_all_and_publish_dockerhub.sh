@@ -1,7 +1,9 @@
 #!/bin/bash
 
 cd shopfront
+
 mvn clean install
+
 if docker build -t prasantk/djshopfront . ; then
   docker push prasantk/djshopfront
 fi
